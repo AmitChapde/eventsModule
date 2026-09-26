@@ -1,0 +1,41 @@
+.fallback {
+  display: grid;
+  min-height: 100vh;
+  align-content: center;
+  justify-items: center;
+  padding: 32px 20px;
+  color: #1d2e28;
+  background: #f7f8fa;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #3155d8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.fallback h1 {
+  max-width: 520px;
+  margin: 0;
+  font-size: clamp(28px, 6vw, 42px);
+}
+
+.fallback > p:not(.eyebrow) {
+  margin: 12px 0 22px;
+  color: #6b7280;
+}
+
+.fallback button {
+  min-height: 42px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  background: #3155d8;
+  cursor: pointer;
+  font-weight: 600;
+}

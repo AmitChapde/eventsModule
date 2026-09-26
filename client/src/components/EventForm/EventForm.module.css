@@ -1,0 +1,88 @@
+.eventForm {
+  max-width: 700px;
+  padding: 30px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.formError {
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  color: #991b1b;
+  background: #fee2e2;
+  border-radius: 8px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+
+.formField label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.formField input,
+.formField textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+.formField input:focus,
+.formField textarea:focus {
+  border-color: #3155d8;
+  box-shadow: 0 0 0 3px rgba(49, 85, 216, 0.1);
+}
+
+.formField textarea {
+  resize: vertical;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #3155d8;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: #2544b5;
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .eventForm {
+    padding: 20px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

@@ -1,0 +1,107 @@
+.eventsPage {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 24px;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #3155d8;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.pageTitle {
+  margin: 0;
+  color: #111827;
+  font-size: 38px;
+  letter-spacing: -0.03em;
+}
+
+.pageSubtitle {
+  margin: 10px 0 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.createButton {
+  padding: 12px 18px;
+  color: white;
+  background: #3155d8;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.createButton:hover {
+  background: #2544b5;
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.statusMessage,
+.errorMessage,
+.emptyState {
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  background: white;
+}
+
+.errorMessage {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.emptyState {
+  border: 1px solid #e5e7eb;
+}
+
+.emptyState h2 {
+  margin-top: 0;
+}
+
+.emptyState p {
+  color: #6b7280;
+}
+
+.emptyState a {
+  color: #3155d8;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .eventGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .pageHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .eventsPage {
+    padding: 30px 16px;
+  }
+
+  .pageTitle {
+    font-size: 30px;
+  }
+}

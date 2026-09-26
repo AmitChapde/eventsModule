@@ -1,0 +1,43 @@
+.pageContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #4b5563;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  color: #3155d8;
+}
+
+.eventLabel {
+  margin: 0 0 8px;
+  color: #3155d8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eventTitle {
+  margin: 0;
+  color: #111827;
+  font-size: 38px;
+  letter-spacing: -0.03em;
+}
+
+@media (max-width: 650px) {
+  .pageContainer {
+    padding: 30px 16px;
+  }
+
+  .eventTitle {
+    font-size: 30px;
+  }
+}

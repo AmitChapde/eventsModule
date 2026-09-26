@@ -1,0 +1,172 @@
+.pageContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.backLink:hover {
+  color: #3155d8;
+}
+
+.eventDetails {
+  padding: 35px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+.eventHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.eventLabel {
+  margin: 0 0 8px;
+  color: #3155d8;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.eventTitle {
+  margin: 0;
+  font-size: 38px;
+  color: #111827;
+  letter-spacing: -0.03em;
+}
+
+.editButton {
+  padding: 10px 16px;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.editButton:hover {
+  border-color: #3155d8;
+  color: #3155d8;
+}
+
+.eventMeta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 30px 0;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #374151;
+}
+
+.metaLabel {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.descriptionSection {
+  padding: 10px 0 30px;
+}
+
+.descriptionSection h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.descriptionSection p {
+  color: #4b5563;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.rsvpSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  background: #f8f9fc;
+  border-radius: 12px;
+}
+
+.rsvpSection p {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.rsvpButton {
+  padding: 13px 28px;
+  color: white;
+  background: #3155d8;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rsvpButton:hover {
+  background: #2544b5;
+}
+
+.rsvpButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.rsvpMessage {
+  margin-top: 15px;
+  padding: 12px;
+  color: #166534;
+  background: #dcfce7;
+  border-radius: 8px;
+}
+
+@media (max-width: 650px) {
+  .eventDetails {
+    padding: 22px;
+  }
+
+  .eventHeader {
+    flex-direction: column;
+  }
+
+  .eventTitle {
+    font-size: 30px;
+  }
+
+  .eventMeta {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .rsvpSection {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .rsvpButton {
+    width: 100%;
+  }
+}
